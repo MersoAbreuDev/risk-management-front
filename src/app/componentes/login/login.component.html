@@ -1,0 +1,55 @@
+
+<div class="main">
+    <div class="container display-flex">
+      <div class="col-xs-12 col-lg-6 custom-margin">
+        <img src="../../../assets/dna.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-lg-6 ">
+          <div class="fixed-wrapper">
+            <mat-card class="custom-style-card">
+              <mat-tab-group>
+                <mat-tab label="RISK MANAGEMENT">
+                  <form [formGroup]="form"
+                  (ngSubmit)="login()">
+                    <div class="input-group mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="E-mail"
+                        aria-label="email"
+                        aria-describedby="email"
+                        formControlName="login"
+                      />
+                    </div>
+  
+                    <div class="input-group mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Senha"
+                        aria-label="password"
+                        aria-describedby="password"
+                        formControlName="password"
+                      />
+                    </div>
+  
+                    <div class="d-grid gap-2">
+                      <button
+                        class="btn btn-primary btn-login"
+                        type="submit"
+                        [disabled]="form.invalid">
+                        ENTRAR
+                      </button>
+                    </div>
+  
+                  </form>
+                </mat-tab>
+              </mat-tab-group>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
