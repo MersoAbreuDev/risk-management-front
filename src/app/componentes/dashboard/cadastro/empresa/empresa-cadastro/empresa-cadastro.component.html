@@ -1,0 +1,72 @@
+<mat-card class="custom-card container ">
+    <form>
+      <div class="col-lg-12">
+        <div class="col">
+          <img src="" class="img-thumbnail" alt="Logo Empresa">
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <label for="">Nome</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-lg-3">
+            <label for="">Nome Fantasia</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-lg-6">
+            <label for="">Status</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Selecione o status</option>
+              <option value="1">Ativo</option>
+              <option value="2">Inativo</option>
+           
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          
+          <div class="col-lg-4">
+            <label for="">CNPJ</label>
+            <input type="text" onkeypress="$(this).mask('00.000.000/0000-00')" class="form-control">
+          </div>
+          <div class="col-lg-4">
+            <label for="">Inscrição Estadual</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-lg-4">
+            <label for="">E-mail</label>
+            <input type="email" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <label for="">Tipo Empresa</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Selecione o tipo</option>
+                <option value="1">Fisica</option>
+                <option value="2">Juridica</option>
+              </select>
+          </div>
+          
+        </div>
+        <div class="row">
+
+        </div>
+          <div class="row">
+          
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-lg-6 buttonCancel">
+        <button class="btn btn-danger">Cancelar</button>
+      </div>
+      <div class="col-lg-6 buttonSuccess">
+        <button class="btn btn-success">Salvar</button>
+      </div>
+    </div>
+  <div class="input-group mb-3">
+   
+  </div>
+
+</mat-card>
