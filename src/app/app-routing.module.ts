@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { RouterGuard } from './guards/router.guard';
 const routes: Routes = [
   {
     path:'',
@@ -13,8 +13,14 @@ const routes: Routes = [
   },
   {
     path:'dashboard',
-    loadChildren:()=>import('./componentes/dashboard/dashboard.module').then((m)=> m.DashboardModule)
+    loadChildren:()=>import('./componentes/dashboard/dashboard.module').then((m)=> m.DashboardModule),
+    canActivate:[RouterGuard]
   
+  },
+  {
+    path:'cadastro',
+    loadChildren:()=>import('./componentes/dashboard/cadastro/cadastro.module').then((m)=> m.CadastroModule),
+    canActivate:[RouterGuard]
   }
 ];
 

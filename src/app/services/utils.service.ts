@@ -16,4 +16,8 @@ export class UtilsService {
   showError(message: string){
     this.toastr.error(message)
   }
+
+  showWarning(message: string){
+    this.toastr.success(message)
+  }
 }

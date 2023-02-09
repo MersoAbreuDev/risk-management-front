@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { ToastrModule } from 'ngx-toastr';
-import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { MenuComponent } from './componentes/menu/menu.component';
+import { MaterialModule } from '../shared/material/material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    MenuComponent
+   
   
   ],
   imports: [
@@ -21,6 +23,7 @@ import { DashboardComponent } from './componentes/dashboard/dashboard.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
+    MaterialModule,
     HttpClientModule,
     ToastrModule.forRoot({
       closeButton: true,
@@ -28,6 +31,9 @@ import { DashboardComponent } from './componentes/dashboard/dashboard.component'
       positionClass: 'toast-top-right'
     })
  
+  ],
+  exports:[
+    MenuComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

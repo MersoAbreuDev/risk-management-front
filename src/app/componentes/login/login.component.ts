@@ -5,6 +5,7 @@ import { LoginUser } from 'src/app/interfaces/login-user';
 import { LocalStorageService } from 'src/app/services/local-storage.service';
 import { LoginService } from 'src/app/services/login.service';
 import { Subject, takeUntil } from 'rxjs';
+import { UtilsService } from '../../services/utils.service';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder,
     private loginServiceApi: LoginService,
     private localStorageService: LocalStorageService,
-    private router: Router){}
+    private router: Router,
+    private utilsService: UtilsService){}
 
 
 
@@ -59,6 +61,7 @@ export class LoginComponent implements OnInit {
         let {token} = res;
         this.localStorageService.setLocalStorage('token', JSON.stringify(token))
         this.localStorageService.setLocalStorage('usuario', JSON.stringify(login))
+        this.utilsService.showSuccess('Login efetuado com sucesso!')
         this.navigateURL('dashboard');
       })
     }
