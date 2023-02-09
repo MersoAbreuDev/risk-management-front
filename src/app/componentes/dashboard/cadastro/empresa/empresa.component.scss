@@ -1,0 +1,42 @@
+
+.custom-style-card {    
+    padding: 15px 20px;
+    display: block;
+    margin: 0 auto;
+   
+}   
+
+.style-card-new{
+    width: 60px;
+    height: 55px;
+    margin-right: 35px;
+    margin-top: 15px;
+}
+
+.custom-style-top{
+  
+    display: flex;
+    margin: 0 auto;
+}
+.custom-style-top .float-end{
+    text-align: right;
+}
+
+@media (min-width: 1200px){
+    .custom-style-card {    
+        width: 1140px;
+    }   
+    .custom-style-top{
+        width: 1140px;
+    }
+}
+
+
+@media (min-width: 1500px){
+    .custom-style-card {    
+        width: 1320px;
+    }  
+    .custom-style-top{
+        width: 1320px;
+    } 
+}

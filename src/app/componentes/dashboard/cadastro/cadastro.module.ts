@@ -5,14 +5,18 @@ import { CadastroRoutingModule } from './cadastro-routing.module';
 import { VeiculoComponent } from './veiculo/veiculo.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../../../../shared/material/material.module';
-import { VeiculoCadastroComponent } from './veiculo/veiculo-cadastro/veiculo-cadastro.component'
+import { VeiculoCadastroComponent } from './veiculo/veiculo-cadastro/veiculo-cadastro.component';
+import { EmpresaComponent } from './empresa/empresa.component';
+import { EmpresaCadastroComponent } from './empresa/empresa-cadastro/empresa-cadastro.component'
 
 
 @NgModule({
   declarations: [
     CadastroComponent,
     VeiculoComponent,
-    VeiculoCadastroComponent
+    VeiculoCadastroComponent,
+    EmpresaComponent,
+    EmpresaCadastroComponent
   ],
   imports: [
     CommonModule,

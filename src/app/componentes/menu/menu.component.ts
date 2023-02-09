@@ -14,9 +14,14 @@ export class MenuComponent {
     private localStorageService: LocalStorageService){}
   
   
-  
+  navigateHome(){
+    this.router.navigate(['/dashboard']);
+  }
   navigateveiculos(){
     this.router.navigate(['cadastro/veiculos']);
+  }
+  navigateEmpresa(){
+    this.router.navigate(['cadastro/empresas']);
   }
 
   logout(){
