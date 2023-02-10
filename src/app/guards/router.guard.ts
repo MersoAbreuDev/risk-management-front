@@ -20,7 +20,8 @@ export class RouterGuard implements CanActivate {
     return true;
    }
    this.mostrarMenuEmitter.emit(false);
-   this.routerNav.navigate(['']);
+   this.routerNav.navigate([''], { queryParams: { returnUrl: '' } });
+  
    return false;
   }
   

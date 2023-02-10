@@ -26,7 +26,16 @@ export class MenuComponent {
 
   logout(){
     this.localStorageService.removeLocalStorage('token')
+    localStorage.removeItem('currentUser');
+    localStorage.removeItem('username');
+ 
     this.router.navigate(['']);
-  
+    this.load();
   }
+
+  load() {
+    (localStorage['refresh'] == 'true' || !localStorage['refresh']) && location.reload();
+    localStorage['refresh'] = true;
+  }
+ 
 }
