@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/risk-management-front",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
