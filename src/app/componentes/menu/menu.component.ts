@@ -29,7 +29,7 @@ export class MenuComponent {
     localStorage.removeItem('currentUser');
     localStorage.removeItem('username');
  
-    this.router.navigate(['']);
+    this.router.navigate(['login']);
     this.load();
   }
 
