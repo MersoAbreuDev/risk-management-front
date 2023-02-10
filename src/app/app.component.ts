@@ -7,7 +7,7 @@ import { Router} from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent{
-  title = 'risk-management-front';
+  title = 'Risk Management';
   mostrarMenu: boolean = false;
   constructor(
     private routerGuard:RouterGuard,
